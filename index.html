@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honestix</title>
+    <link rel="stylesheet" href="CSS/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-          font-family: 'Hind_Siliguri', sans-serif;
-         }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
-<body>
+<body class="hind-siliguri-bold">
     <header class="bg-[#106a0c] pt-1 lg:pt-4">
         <nav class="flex flex-col items-center">
             <!-- Section-1 -->
@@ -57,10 +52,54 @@
     </header>
     
     <main class="bg-[#f3fee2] min-h-screen">
-        <section class="flex flex-col items-center">
-            <div><img src="assets/banner.png" alt=""></div>
-            <div></div>
+        <!-- Body section -->
+        <section class="flex flex-col items-center mb-4">
+            <!-- Banner Image -->
+            <div>
+                <img src="assets/banner.png" alt="Banner">
+            </div>
+        
+            <!-- Large Screen Layout -->
+            <div class="hidden lg:grid grid-cols-3 place-items-center space-x-2 pt-10">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-truck rounded-full text-white p-2 bg-[#106a0c]"></i>
+                    <span class="font-extrabold text-xl">হোম ডেলিভেরি</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-truck rounded-full p-2 text-white bg-[#106a0c]"></i>
+                    <span class="font-extrabold text-xl">100% খাঁটির নিশ্চয়তা</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-truck rounded-full p-2 text-white bg-[#106a0c]"></i>
+                    <span class="font-extrabold text-xl">সর্বদা ক্যাশব্যাক সুবিধা</span>
+                </div>
+            </div>
+        
+            <!-- Small Screen Layout with Marquee -->
+            <marquee behavior="" direction="left" class="lg:hidden w-full mt-4">
+                <div class="flex space-x-8">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-truck rounded-full text-white p-2 bg-[#106a0c]"></i>
+                        <span class="font-extrabold text-lg">হোম ডেলিভেরি</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-truck rounded-full p-2 text-white bg-[#106a0c]"></i>
+                        <span class="font-extrabold text-lg">100% খাঁটির নিশ্চয়তা</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-truck rounded-full p-2 text-white bg-[#106a0c]"></i>
+                        <span class="font-extrabold text-lg">সর্বদা ক্যাশব্যাক সুবিধা</span>
+                    </div>
+                </div>
+            </marquee>
+        
+            <!-- Title Section -->
+            <div class="pt-5 lg:pt-20 text-center">
+                <span class="text-2xl lg:text-4xl font-extrabold">জনপ্রিয় সকল প্রডাক্ট দেখুন</span>
+            </div>
         </section>
+        
+        <hr class="border-t-1 border-[#76A713] mx-5 lg:mx-[365px]">
 
     </main>
     <footer class=" bg-[#106a0c] h-36 py-4">
